@@ -130,14 +130,14 @@ The size of the data field is 7 bits. This means a Delta of 0 - 127°C can be re
 # Supported Processors:
 * AMD:
   * [All Ryzen/Epyc series.](https://en.wikipedia.org/wiki/Ryzen)
-  * All FX series.
-  * All APU series.
-  * All Phenom / Phenom II series.
-  * All Athlon II series.
-  * All Turion II series.
-  * All Athlon64 series.
-  * All Athlon64 X2 series.
-  * All Athlon64 FX series.
+  * [All FX series.](https://de.wikipedia.org/wiki/AMD_FX)
+  * [All APU series.](https://en.wikipedia.org/wiki/AMD_APU)
+  * [All Phenom / Phenom II series.](https://en.wikipedia.org/wiki/AMD_Phenom)
+  * [All Athlon II series.](https://en.wikipedia.org/wiki/Athlon)
+    * All Athlon64 series.
+    * All Athlon64 X2 series.
+    * All Athlon64 FX series.
+  * [All Turion II series.](https://en.wikipedia.org/wiki/AMD_Turion)
   * All Turion64 series.
   * All Turion64 X2 series.
   * All Sempron series. (K8 and up based)
