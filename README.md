@@ -145,15 +145,15 @@ The size of the data field is 7 bits. This means a Delta of 0 - 127°C can be re
   * Single Core Opterons starting with SH-C0 revision and up. (K8 based)
 
 * Intel:
-  * All Core i3, i5, i7, i9 series.
-  * All Atom processors.
-  * All Core Solo series.
-  * All Core Duo series.
-  * All Core 2 Duo series.
-  * All Core 2 Quad series.
-  * All Core 2 Extreme series.
-  * All Celeron-M 400 and 500 series.
-  * All Celeron series.
+  * [All Core i3, i5, i7, i9 series.](https://en.wikipedia.org/wiki/Intel_Core)
+  * [All Atom processors.](https://en.wikipedia.org/wiki/Intel_Atom)
+  * [All Core Solo series.](https://www.thinkwiki.org/wiki/Intel_Core_Solo_(Yonah))
+  * [All Core Duo series.](https://en.wikipedia.org/wiki/Intel_Core_2)
+    * All Core 2 Duo series.
+    * All Core 2 Quad series.
+    * All Core 2 Extreme series.
+  * [All Celeron series.](https://simple.wikipedia.org/wiki/Celeron)
+    * All Celeron-M 400 and 500 series.
   * All Pentium series.
   * All Xeon (Core based) processors
 
