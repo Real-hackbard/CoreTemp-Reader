@@ -138,10 +138,10 @@ The size of the data field is 7 bits. This means a Delta of 0 - 127°C can be re
     * All Athlon64 X2 series.
     * All Athlon64 FX series.
   * [All Turion II series.](https://en.wikipedia.org/wiki/AMD_Turion)
-  * All Turion64 series.
-  * All Turion64 X2 series.
-  * All Sempron series. (K8 and up based)
-  * All Opteron processors.
+    * All Turion64 series.
+    * All Turion64 X2 series.
+  * [All Sempron series.](https://en.wikipedia.org/wiki/Sempron) (K8 and up based)
+  * [All Opteron processors.](https://en.wikipedia.org/wiki/Opteron)
   * Single Core Opterons starting with SH-C0 revision and up. (K8 based)
 
 * Intel:
