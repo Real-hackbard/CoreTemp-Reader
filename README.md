@@ -50,7 +50,39 @@ So the actual temperature is calculated like this 'Core Temp = Tjunction - Delta
 
 The size of the data field is 7 bits. This means a Delta of 0 - 127°C can be reported in theory. In fact the reported temperature can rarely go below 0°C and in some cases (Core 2 - 45nm series) temperatures below 30° or even 40°C are not reported.
 
+# Supported Processors:
+* AMD:
+  * All Ryzen/Epyc series.
+  * All FX series.
+  * All APU series.
+  * All Phenom / Phenom II series.
+  * All Athlon II series.
+  * All Turion II series.
+  * All Athlon64 series.
+  * All Athlon64 X2 series.
+  * All Athlon64 FX series.
+  * All Turion64 series.
+  * All Turion64 X2 series.
+  * All Sempron series. (K8 and up based)
+  * All Opteron processors.
+  * Single Core Opterons starting with SH-C0 revision and up. (K8 based)
 
+* Intel:
+  * All Core i3, i5, i7, i9 series.
+  * All Atom processors.
+  * All Core Solo series.
+  * All Core Duo series.
+  * All Core 2 Duo series.
+  * All Core 2 Quad series.
+  * All Core 2 Extreme series.
+  * All Celeron-M 400 and 500 series.
+  * All Celeron series.
+  * All Pentium series.
+  * All Xeon (Core based) processors
+
+* VIA:
+  * All Nano series.
+  * C7 series and derivatives.
 
 
 
