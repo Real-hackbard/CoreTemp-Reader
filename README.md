@@ -31,7 +31,24 @@ What makes Core Temp unique is the way it works. It is capable of displaying a t
 
 You can see temperature fluctuations in real time with varying workloads. Core Temp is also motherboard agnostic.
 
-Download latest Version: https://www.alcpu.com/CoreTemp/Core-Temp-setup-v1.20.1.150.exe
+Download latest Version: https://www.alcpu.com/CoreTemp/Core-Temp-setup-v1.20.1.150.exe  
+
+Core Temp makes it easy for you to monitor the temperature of any modern x86 based processor. The program supports processors from all three major manufacturers; Intel, AMD and VIA.
+
+Intel processors starting with the "Core" series all the way up to the newest Core i7, including all the derivatives.
+AMD processors starting with the first Athlon64 and Opteron processor series, all Phenom and AMD's new APU are supported.
+VIA processors starting with the C7 generation of CPUs, including all the derivatives based on the C7 architecture. All of the Nano based processors are supported as well.
+
+The temperature readings are very accurate as the data is collected directly from a Digital Thermal Sensor (or DTS) which is located in each individual processing core*, near the hottest part. This sensor is digital, which means it doesn't rely on an external circuit located on the motherboard to report temperature, its value is stored in a special register in the processor so that software can access and read it. This eliminates any inaccuracies that can be introduced by external motherboard circuits and sensors.
+
+### This is how the program works:
+
+Intel defines a certain Tjunction temperature for the processor. This value is usually in the range between 85°C and 105°C. In the later generation of processors, starting with Nehalem, the exact Tjunction Max value is available for software to read in an MSR (short for Model Specific Register).
+A different MSR contains the temperature data. The data is represented as a Delta in °C between current temperature and Tjunction.
+
+So the actual temperature is calculated like this 'Core Temp = Tjunction - Delta'
+
+The size of the data field is 7 bits. This means a Delta of 0 - 127°C can be reported in theory. In fact the reported temperature can rarely go below 0°C and in some cases (Core 2 - 45nm series) temperatures below 30° or even 40°C are not reported.
 
 
 
