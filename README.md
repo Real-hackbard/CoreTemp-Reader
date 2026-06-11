@@ -129,7 +129,7 @@ The size of the data field is 7 bits. This means a Delta of 0 - 127°C can be re
 
 # Supported Processors:
 * AMD:
-  * All Ryzen/Epyc series.
+  * [All Ryzen/Epyc series.](https://en.wikipedia.org/wiki/Ryzen)
   * All FX series.
   * All APU series.
   * All Phenom / Phenom II series.
