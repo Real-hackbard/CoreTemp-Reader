@@ -30,7 +30,6 @@ Download Console Project : https://74.cz/download/SMCoreTempDelphiReader.zip
 
 ### Code Example:
 ```pascal
-// http://www.alcpu.com/CoreTemp
 
 program SMCoreTempDelphiReader;
 
