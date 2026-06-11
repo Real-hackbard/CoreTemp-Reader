@@ -24,6 +24,10 @@ CoreTemp Reader requires the [CoreTemp](https://www.alcpu.com/CoreTemp/) program
 Download Source : https://74.cz/download/GetCoreTempInfoDelphi.zip  
 Download Console Project : https://74.cz/download/SMCoreTempDelphiReader.zip
 
+* Author: Michal Kokorceny
+* Web:    http://74.cz
+* E-mail: michal@74.cz
+
 ### Code Example:
 ```pascal
 // http://www.alcpu.com/CoreTemp
