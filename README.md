@@ -154,12 +154,12 @@ The size of the data field is 7 bits. This means a Delta of 0 - 127°C can be re
     * All Core 2 Extreme series.
   * [All Celeron series.](https://simple.wikipedia.org/wiki/Celeron)
     * All Celeron-M 400 and 500 series.
-  * All Pentium series.
-  * All Xeon (Core based) processors
+  * [All Pentium series.](https://en.wikipedia.org/wiki/List_of_Intel_Pentium_processors)
+  * [All Xeon (Core based) processors](https://www.wikiwand.com/en/List_of_Intel_Xeon_processors_(Core-based))
 
 * VIA:
-  * All Nano series.
-  * C7 series and derivatives.
+  * [All Nano series.](https://en.wikipedia.org/wiki/VIA_Nano)
+  * [C7 series and derivatives.](https://en.wikipedia.org/wiki/VIA_C7)
 
 
 
