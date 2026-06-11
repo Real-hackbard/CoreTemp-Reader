@@ -21,7 +21,7 @@ Core Temp memory reader for Delphi is a shared memory interface library. This li
 
 CoreTemp Reader requires the [CoreTemp](https://www.alcpu.com/CoreTemp/) program to capture and analyze data from system memory. The program can be started and stopped either manually or automatically.
 
-Download Souuce : https://74.cz/download/GetCoreTempInfoDelphi.zip  
+Download Source : https://74.cz/download/GetCoreTempInfoDelphi.zip  
 Download Console Project : https://74.cz/download/SMCoreTempDelphiReader.zip
 
 # CoreTemp
