@@ -24,6 +24,79 @@ CoreTemp Reader requires the [CoreTemp](https://www.alcpu.com/CoreTemp/) program
 Download Source : https://74.cz/download/GetCoreTempInfoDelphi.zip  
 Download Console Project : https://74.cz/download/SMCoreTempDelphiReader.zip
 
+### Code Example:
+```pascal
+// http://www.alcpu.com/CoreTemp
+
+program SMCoreTempDelphiReader;
+
+{$APPTYPE CONSOLE}
+
+uses
+  Windows,
+  SysUtils,
+  GetCoreTempInfoDelphi in 'GetCoreTempInfoDelphi.pas';
+
+var
+  Data: CORE_TEMP_SHARED_DATA;
+  CPU, Core, Index: Cardinal;
+  Degree: Char;
+  Temp: Single;
+
+function StringToOem(const Str: string): AnsiString;
+begin
+  Result := AnsiString(Str);
+  if Length(Result) > 0 then
+    CharToOemA(PAnsiChar(Result), PAnsiChar(Result));
+end;
+
+begin
+  try
+    Writeln('Core Temp shared memory reader');
+    if fnGetCoreTempInfo(Data) then
+    begin
+      Writeln('Processor  : ' + Data.sCPUName);
+      Writeln('Core(s)    : ' + IntToStr(Data.uiCoreCnt));
+      Writeln('CPU(s)     : ' + IntToStr(Data.uiCPUCnt));
+      Writeln('CPU speed  : ' + FloatToStrF(Data.fCPUSpeed, ffFixed, 7, 0)
+        + ' MHz');
+      Writeln('FSB speed  : ' + FloatToStrF(Data.fFSBSpeed, ffFixed, 7, 0)
+        + ' MHz');
+      Writeln('Multiplier : ' + FloatToStrF(Data.fMultipier, ffFixed, 7, 1));
+      Writeln('VID        : ' + FloatToStrF(Data.fVID, ffFixed, 7, 2) + ' V');
+      if Data.ucFahrenheit then
+        Degree := 'F'
+      else
+        Degree := 'C';
+      for CPU := 0 to Data.uiCPUCnt - 1 do
+      begin
+        for Core := 0 to Data.uiCoreCnt - 1 do
+        begin
+          Index := (CPU * Data.uiCoreCnt) + Core;
+          if Data.ucDeltaToTjMax then
+            Temp := Data.uiTjMax[CPU] - Data.fTemp[Index]
+          else
+            Temp := Data.fTemp[Index];
+          Write('CPU #' + IntToStr(CPU) + ', Core #' + IntToStr(Core) + ':  ');
+          Write('Temperature = ' + FloatToStrF(Temp, ffFixed, 7, 0) + ' ' +
+            Degree + '  ');
+          Writeln('Load = ' + IntToStr(Data.uiLoad[Index]) + ' %');
+        end;
+      end;
+    end
+    else
+    begin
+      Writeln('Error: Core Temp''s shared memory could not be read');
+      Writeln('Reason: ' + StringToOem(SysErrorMessage(GetLastError)));
+    end;
+  except
+    on E: Exception do
+      Writeln(E.Classname, ': ', E.Message);
+  end;
+
+end.
+```
+
 # CoreTemp
 Core Temp is a compact, no fuss, small footprint, yet powerful program to monitor processor temperature and other vital information.
 
